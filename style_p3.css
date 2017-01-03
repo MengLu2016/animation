@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container_p3{
+    margin:0 auto;
+    padding:0;
+    width:640px;
+    height:1160px;
+    background: #fdda5c;
+    text-align: center;
+}
+#top{
+    margin-bottom:30px;
+    padding-top: 150px;
+    /*position: relative;*/
+    /*visibility: hidden;*/
+    -webkit-animation:picCome 2s;
+}
+@-webkit-keyframes picCome {
+    0% {
+        left:-350px;
+        -webkit-transform:rotate(60deg) scale(0.5);
+    }
+    50% {
+        left:-170px;
+        -webkit-transform:rotate(-60deg) scale(0.8);
+    }
+    100%{
+        left:0;
+        -webkit-transform: scale(1);
+    }
+}
+#star1{
+    float: left;
+    margin-left: 40px;
+}
+
+#star2{
+    float: right;
+    margin-right: 40px;
+}
+.content{
+    margin:0;
+    padding:0;
+}
+#n0{
+    visibility: hidden;
+}
+#n03{
+    margin:0;
+    padding:0;
+    height:130px;
+    position: relative;
+    visibility: hidden;
+
+}
+#word1{
+    position: absolute;
+    left:70px;
+    top:50px;
+}
+#n3{
+    position: absolute;
+    right:50px;
+}
+#n04{
+    margin:0;
+    padding:0;
+    height:130px;
+    position: relative;
+    visibility: hidden;
+}
+#n4{
+    position: absolute;
+    left:70px;
+    top:-20px;
+}
+#word2{
+    position: absolute;
+    right:140px;
+    top:20px;
+}
+#n05{
+    margin:0;
+    padding:0;
+    height:110px;
+    position: relative;
+    visibility: hidden;
+}
+#n5{
+    position: absolute;
+    right:60px;
+    top:-10px;
+}
+#word3{
+    position: absolute;
+    left:110px;
+}
+.footer{
+    margin:0;
+    padding:0;
+    position: relative;
+}
+#QQ2{
+    position: absolute;
+    left:100px;
+    top:-20px;
+    -webkit-animation:QQCome 6s;
+    animation-delay:2.5s;
+}
+@-webkit-keyframes QQCome {
+    0% {
+        left:420px;
+        top:-413px;
+        -webkit-transform:rotate(60deg) scale(0.5);
+    }
+    25% {
+        left:0;
+        top:-326px;
+        -webkit-transform:rotate(-60deg) scale(0.6);
+    }
+    50%{
+        left:420px;
+        top:-170px;
+        -webkit-transform:rotate(60deg) scale(0.8);
+    }
+    100%{
+        left:100px;
+        top:-20px;
+        -webkit-transform: scale(1);
+    }
+}
+#stamp {
+    visibility: hidden;
+    position: absolute;
+    right: 140px;
+    top: -50px;
+}

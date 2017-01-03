@@ -1,0 +1,226 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    margin:0 auto;
+    padding:0;
+    width:640px;
+    height:1160px;
+    background: #ed5b44 url("potos/p1/images/light.png") no-repeat;
+    /*background-image: url("potos/p1/images/light.png");*/
+    position: relative;
+    overflow: hidden;
+    /*display: flex;*/
+}
+#top_p1{
+    position: relative;
+    margin:0;
+    padding:0;
+    height:200px;
+}
+#top_p1 >div {
+    position: absolute;
+    /*-webkit-animation:starAnim 1s infinite;*/
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-direction: normal, normal;
+    -webkit-animation-timing-function: linear, ease-in;
+}
+#top_p1 > div >img{
+    position: absolute;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-transform-origin: 50% -50%;
+}
+@-webkit-keyframes fade
+{
+    0%   { opacity: 1; }
+    95%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-webkit-keyframes drop
+{
+    0%   { -webkit-transform: translate(0px, -50px); }
+    100% { -webkit-transform: translate(0px, 1160px); }
+}
+@-webkit-keyframes clockwiseSpin
+{
+    0%   { -webkit-transform: rotate(-50deg); }
+    100% { -webkit-transform: rotate(50deg); }
+}
+@-webkit-keyframes counterclockwiseSpinAndFlip
+{
+    0%   { -webkit-transform: scale(-1, 1) rotate(50deg); }
+    100% { -webkit-transform: scale(-1, 1) rotate(-50deg); }
+}
+.content_p1{
+    margin:0;
+    padding:0;
+}
+.congra_p1{
+    margin:0 auto;
+    padding:0;
+    text-align: center;
+}
+.congra_p1 img{
+    position: relative;
+    -webkit-animation:conAnim 2s ;
+    -moz-animation:conAnim 2s;
+}
+@-webkit-keyframes conAnim {
+    0% {
+        top:-800px;
+        transform:scale(0.1);
+    }
+    80%{
+        top:0;
+        transform:scale(0.8)
+    }
+    95% {
+        top:-50px;
+        transform:scale(0.5)
+    }
+    100%{
+        top:0;
+        transform:scale(1)
+    }
+}
+
+.QQ_p1{
+    margin:0;
+    height:350px;
+    position: relative;
+}
+.QQ3{
+    position: absolute;
+    left: 60px;
+    top: 25px;
+    display: inline-block;
+}
+.QQ3 img{
+    position: relative;
+    -webkit-animation:QQ3move 0.4s infinite linear;
+    -moz-animation:QQ3move 0.4s infinite linear;
+}
+@-webkit-keyframes QQ3move {
+    0% {
+        top:0;
+    }
+    50% {
+        top:-60px;
+        /*-webkit-transform: scale(0.5) rotate(60deg)*/
+    }
+    100%{
+        top:0;
+    }
+}
+#QQ1_p6{
+    position: absolute;
+    top:25px ;
+    left:225px;
+    display: inline-block;
+}
+.QQ1{
+    position: absolute;
+    top:115px ;
+    left:225px;
+    display: inline-block;
+}
+.QQ1 img{
+    position: relative;
+    -webkit-animation:QQ1move 1s infinite linear;
+    -moz-animation:QQ1move 1s infinite linear;
+}
+@-webkit-keyframes QQ1move {
+    0% {
+        -webkit-transform:rotate(20deg)
+    }
+    50% {
+        -webkit-transform:rotate(-20deg)
+    }
+    100%{
+        -webkit-transform:rotate(20deg)
+    }
+}
+#star_p6{
+    position: absolute;
+    top:15px ;
+    left:180px;
+    display: inline-block;
+    -webkit-animation:starmove 1s infinite;
+}
+.star{
+    position: absolute;
+    top:105px ;
+    left:180px;
+    display: inline-block;
+    -webkit-animation:starmove 1s infinite;
+}
+@-webkit-keyframes starmove {
+    0% {
+
+        -webkit-transform: scale(0.9);
+    }
+    50% {
+        -webkit-transform: scale(1);
+    }
+    100%{
+        -webkit-transform: scale(0);
+    }
+}
+.QQ2{
+    position: absolute;
+    right: 18px;
+    top: 15px;
+    display: inline-block;
+}
+.QQ2 img{
+    position: relative;
+    -webkit-animation:QQ2move 1s infinite linear;
+    -moz-animation:QQ2move 1s infinite linear;
+}
+@-webkit-keyframes QQ2move {
+    0% {
+        -webkit-transform:rotate(-20deg) scale(1);
+    }
+    50% {
+        -webkit-transform:rotate(20deg) scale(0.5);
+    }
+    100%{
+        -webkit-transform:rotate(-20deg) scale(1);
+    }
+}
+.bottom_p1{
+    margin:0;
+    padding:0;
+    position: relative;
+}
+#cloud1_p6{
+    position: absolute;
+    margin:0;
+    padding: 0;
+    bottom: -94px;
+}
+.cloud1{
+    position: absolute;
+    margin:0;
+    padding: 0;
+    bottom: -174px;
+}
+#cloud2_p6{
+    position: absolute;
+    margin:0;
+    padding: 0;
+    bottom: -60px;
+}
+.cloud2{
+    position: absolute;
+    margin:0;
+    padding: 0;
+    bottom: -140px;
+}
+
+
+
+

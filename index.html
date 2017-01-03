@@ -1,0 +1,123 @@
+<html ng-app="ionicApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>p1</title>
+    <link rel="stylesheet" href="style_p1.css">
+    <link rel='stylesheet' href="style_p2.css">
+    <link rel='stylesheet' href="style_p3.css">
+    <link rel="stylesheet" href="lib/css/ionic.min.css">
+
+    <script src="./lib/js/ionic.bundle.min.js"></script>
+    <script type="text/javascript" src="starAnim.js"></script>
+    <script type="text/javascript" src="p3Anim.js"></script>
+    <script type="text/javascript" src="controller.js"></script>
+</head>
+
+<body>
+<ion-nav-bar class="bar-positive">
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+</ion-nav-bar>
+<ion-nav-view></ion-nav-view>
+
+<script id="templates/tabs.html" type="text/ng-template">
+    <ion-tabs class="tabs-icon-top tabs-positive">
+        <ion-tab title="page1" icon="ion-happy" href="#/tab/home">
+            <ion-nav-view name="home-tab"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="page2" icon="ion-happy" href="#/tab/about">
+            <ion-nav-view name="about-tab"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="page3" icon="ion-happy" ui-sref="tabs.contact">
+            <ion-nav-view name="contact-tab"></ion-nav-view>
+        </ion-tab>
+    </ion-tabs>
+</script>
+
+<script id="templates/home.html" type="text/ng-template">
+    <ion-view view-title="p1">
+        <ion-content class="padding">
+            <div class="container">
+            <!--产生星星的地方-->
+            <div id="top_p1"></div>
+            <div class="content_p1">
+            <div class="congra_p1">
+            <img src="./potos/p1/images/word_1.png">
+            </div>
+            <div class="QQ_p1">
+            <div class="QQ3"><img src="./potos/p1/images/QQ_3.png"></div>
+            <div class="QQ1"><img src="./potos/p1/images/QQ_1.png"></div>
+            <div class="star"><img src="potos/p1/images/starq_6.png"></div>
+            <div class="QQ2"><img src="./potos/p1/images/QQ_2.png"></div>
+            </div>
+            </div>
+            <div class="bottom_p1">
+            <div class="cloud1"><img src="potos/p1/images/cloud_2.png"></div>
+            <div class="cloud2"><img src="potos/p1/images/cloud_1.png"></div>
+            </div>
+            </div>
+        </ion-content>
+    </ion-view>
+</script>
+
+<script id="templates/about.html" type="text/ng-template">
+    <ion-view view-title="p2">
+        <ion-content class="padding">
+            <div class="container_p2">
+                <div class="top_p2">
+                    <div class="top1"><img src="potos/p2/images/top_1.png"></div>
+                    <div class="top2"><img src="potos/p2/images/top_2.png"> </div>
+                    <div class="top3"><img src="potos/p2/images/top_3.png"> </div>
+                    <div class="word"><img src="potos/p2/images/word_1.png"></div>
+
+                </div>
+                <div class="QQ_p2">
+                    <div class="QQ_p21"><img src="potos/p2/images/QQ_1.png"> </div>
+                    <div class="QQ_p22"><img src="potos/p2/images/QQ_2.png"> </div>
+                    <div class="QQ_p23"><img src="potos/p2/images/QQ_3.png"> </div>
+                </div>
+            </div>
+        </ion-content>
+    </ion-view>
+</script>
+
+<script id="templates/contact.html" type="text/ng-template">
+    <ion-view title="p3">
+        <ion-content>
+            <div class="container_p3">
+                <div id="top">
+                    <!--<img src="potos/p3/TOP1.png">-->
+                    <img src="potos/p3/star.png" id="star1">
+                    <img src="potos/p3/star.png" id="star2">
+                </div>
+                <div class="content">
+                    <div id="n0"><img src="potos/p3/n_1.png"> </div>
+                    <div id="n03">
+                        <img src="potos/p3/word_1.png" id="word1">
+                        <img src="potos/p3/n_3.png" id="n3">
+                    </div>
+                    <div id="n04">
+                        <img src="potos/p3/n_4.png" id="n4">
+                        <img src="potos/p3/word_2.png" id="word2">
+                    </div>
+                    <div id="n05">
+                        <img src="potos/p3/word_3.png" id="word3">
+                        <img src="potos/p3/n_5.png" id="n5">
+                    </div>
+                </div>
+                <div class="footer">
+                    <img src="potos/p3/QQ2.png" id="QQ2">
+                    <img src="potos/p3/stamp.png" id="stamp">
+                </div>
+
+            </div>
+        </ion-content>
+    </ion-view>
+</script>
+</body>
+</html>
+
