@@ -1,6 +1,4 @@
-/**
- * Created by xiaolulu on 2017/1/3.
- */
+
 angular.module('starter', ['ionic'])
 
     .run(function($ionicPlatform) {
